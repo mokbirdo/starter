@@ -7,6 +7,13 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## CI Statuses
+
+<p align="left">
+<a href="https://codeclimate.com/repos/5eadf76907db88018d0002c7/maintainability"><img src="https://api.codeclimate.com/v1/badges/2dca523da23b5134b6d9/maintainability" /></a>
+<a href="https://github.styleci.io/repos/260771659"><img src="https://github.styleci.io/repos/260771659/shield?branch=master" alt="StyleCI"></a>
+</p>
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
