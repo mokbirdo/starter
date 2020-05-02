@@ -12,6 +12,7 @@
 <p align="left">
 <a href="https://codeclimate.com/repos/5eadf76907db88018d0002c7/maintainability"><img src="https://api.codeclimate.com/v1/badges/2dca523da23b5134b6d9/maintainability" /></a>
 <a href="https://github.styleci.io/repos/260771659"><img src="https://github.styleci.io/repos/260771659/shield?branch=master" alt="StyleCI"></a>
+<a href="https://scrutinizer-ci.com/g/mokbirdo/starter/?branch=master"><img src="https://scrutinizer-ci.com/g/mokbirdo/starter/badges/quality-score.png?b=master"></a>
 </p>
 
 ## About Laravel
