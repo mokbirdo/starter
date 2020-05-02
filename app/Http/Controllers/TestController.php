@@ -13,7 +13,8 @@ class TestController extends Controller
         $snake_var = 2;
         $camelCaseVar = 3;
         $UcFirstCamelCaseVar = 4;
-        return Array($var, $VAR, $snake_var, $camelCaseVar, $UcFirstCamelCaseVar);
+
+        return [$var, $VAR, $snake_var, $camelCaseVar, $UcFirstCamelCaseVar];
     }
 
     public function iAmTest(Request $request)
@@ -23,6 +24,7 @@ class TestController extends Controller
         $snake_var = 2;
         $camelCaseVar = 3;
         $UcFirstCamelCaseVar = 4;
-        return Array($var, $VAR, $snake_var, $camelCaseVar, $UcFirstCamelCaseVar);
+
+        return [$var, $VAR, $snake_var, $camelCaseVar, $UcFirstCamelCaseVar];
     }
 }
