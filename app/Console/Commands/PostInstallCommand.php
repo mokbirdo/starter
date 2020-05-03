@@ -37,6 +37,6 @@ class PostInstallCommand extends Command
      */
     public function handle()
     {
-        echo "!!!";
+        echo '!!!';
     }
 }
