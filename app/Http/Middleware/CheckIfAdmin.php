@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\User;
 use Closure;
 
 class CheckIfAdmin
@@ -16,9 +17,9 @@ class CheckIfAdmin
      * change the contents of this method to check that the logged in user
      * is an admin, and not a regular user.
      *
-     * @param [type] $user [description]
+     * @param User $user
      *
-     * @return bool [description]
+     * @return bool
      */
     private function checkIfUserIsAdmin($user)
     {
@@ -29,9 +30,9 @@ class CheckIfAdmin
     /**
      * Answer to unauthorized access request.
      *
-     * @param [type] $request [description]
+     * @param \Illuminate\Http\Request $request
      *
-     * @return [type] [description]
+     * @return \Illuminate\Http\Response
      */
     private function respondToUnauthorizedRequest($request)
     {
