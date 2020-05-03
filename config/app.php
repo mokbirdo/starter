@@ -123,6 +123,9 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    // ToDo: need more accurate solution
+    'protocol_force' => env('PROTOCOL_FORCE'),
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
