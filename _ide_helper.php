@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel, to provide autocomplete information to your IDE
- * Generated for Laravel 7.9.2 on 2020-05-03 02:58:44.
+ * Generated for Laravel 7.9.2 on 2020-05-03 04:41:54.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -23554,3 +23554,10 @@ namespace Illuminate\Support {
     class Fluent {}
 }
 
+namespace App {
+    /**
+    * @method \Illuminate\Database\Eloquent\Collection|User[]|User create($attributes = [])
+    * @method \Illuminate\Database\Eloquent\Collection|User[]|User make($attributes = [])
+    */
+    class UserFactoryBuilder extends \Illuminate\Database\Eloquent\FactoryBuilder {}
+}

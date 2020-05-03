@@ -353,7 +353,8 @@ abstract class Model implements Arrayable, ArrayAccess, Jsonable, JsonSerializab
             } elseif ($totallyGuarded) {
                 throw new MassAssignmentException(sprintf(
                     'Add [%s] to fillable property to allow mass assignment on [%s].',
-                    $key, get_class($this)
+                    $key,
+                    get_class($this)
                 ));
             }
         }
@@ -594,7 +595,8 @@ abstract class Model implements Arrayable, ArrayAccess, Jsonable, JsonSerializab
         $this->incrementOrDecrementAttributeValue($column, $amount, $extra, $method);
 
         return $query->where(
-            $this->getKeyName(), $this->getKey()
+            $this->getKeyName(),
+            $this->getKey()
         )->{$method}($column, $amount, $extra);
     }
 
@@ -1204,7 +1206,8 @@ abstract class Model implements Arrayable, ArrayAccess, Jsonable, JsonSerializab
         ];
 
         $attributes = Arr::except(
-            $this->getAttributes(), $except ? array_unique(array_merge($except, $defaults)) : $defaults
+            $this->getAttributes(),
+            $except ? array_unique(array_merge($except, $defaults)) : $defaults
         );
 
         return tap(new static, function ($instance) use ($attributes) {
