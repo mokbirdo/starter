@@ -58,6 +58,9 @@
             "dont-discover": []
         },
         "hooks": {
+            "pre-commit": "php artisan ide-helper:meta",
+            "pre-push": [
+            ],
             "post-merge": "composer update"
         }
     },
