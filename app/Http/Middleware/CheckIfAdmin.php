@@ -32,7 +32,7 @@ class CheckIfAdmin
      *
      * @param \Illuminate\Http\Request $request
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response|Illuminate\Http\RedirectResponse
      */
     private function respondToUnauthorizedRequest($request)
     {
