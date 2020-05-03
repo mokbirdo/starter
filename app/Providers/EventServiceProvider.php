@@ -33,9 +33,9 @@ class EventServiceProvider extends ServiceProvider
 
         Event::listen('*', function ($eventName, array $data) {
             if ($eventName == "Illuminate\Console\Events\CommandFinished") {
-                if(Str::startsWith($data[0]->command, 'migrate')){
-                    echo "Run model parser!" . PHP_EOL;
-                    echo Artisan::call('ide-helper:models -W') . PHP_EOL;
+                if (Str::startsWith($data[0]->command, 'migrate')) {
+                    echo 'Run model parser!'.PHP_EOL;
+                    echo Artisan::call('ide-helper:models -W').PHP_EOL;
                 }
             }
         });
